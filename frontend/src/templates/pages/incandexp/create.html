@@ -1,0 +1,56 @@
+<div class="incandexp-form">
+    <div class="h1 mb-4 pb-0 pb-sm-3 px-3 px-sm-0 text-center text-sm-start">
+        Создание дохода/расхода
+    </div>
+    <div class="main-form-group">
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <select id="select-type" class="form-select rounded-1 px-3 py-2" aria-label="Выберите расход или доход">
+                <option value="incCategory">Доход</option>
+                <option value="expCategory">Расход</option>
+            </select>
+            <div class="invalid-feedback">
+                Поле не может быть пустым
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <select id="select-category" class="form-select rounded-1 px-3 py-2" aria-label="Выберите категорию">
+                <option selected>Категория...</option>
+            </select>
+            <div class="invalid-feedback">
+                Нужно выбрать категорию
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <input id="amount" type="text" class="form-control rounded-1 px-3 py-2 lh-1" min="1" placeholder="Сумма в $..."
+                   aria-label="Сумма в $..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Введите число, можно 2 знака после запятой.
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <input id="date" type="date" class="form-control rounded-1 px-3 py-2 lh-1" placeholder="Дата..."
+                   aria-label="Дата..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Выберите дату.
+            </div>
+        </div>
+        <div class="input-group mb-1 justify-content-sm-start justify-content-center">
+            <input id="comment" type="text" class="form-control rounded-1 px-3 py-2 lh-1"  placeholder="Комментарий..."
+                   aria-label="Комментарий..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Поле не может быть пустым. Начинаться должно с цифры или буквы.
+            </div>
+        </div>
+        <div class="pt-3 text-sm-start text-center">
+            <button id="btnAction" type="button" class="btn btn-success me-2">
+                Создать
+            </button>
+            <button type="button" onclick="document.location='#/incandexp'" class="btn btn-danger">
+                Отмена
+            </button>
+        </div>
+    </div>
+</div>

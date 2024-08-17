@@ -1,0 +1,61 @@
+<section class="container position-absolute top-50 start-50 translate-middle">
+    <div class="row justify-content-center">
+        <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-7 col-sm-9 col-12">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-auto justify-content-center">
+                    <img src="../images/logo.png" alt="Логотип Lumincoin" height="70" width="176"/>
+                </div>
+            </div>
+            <div class="px-2">
+                <p class="h1 text-center mb-4 mt-3">Вход</p>
+                <p class="h5 d-none text-center text-danger mb-3" id="login-error-msg"></p>
+                <div class="input-group mb-2">
+                    <span class="input-group-text p-2">
+                        <svg class="m-1" width="14.000000" height="14.000000"
+                             viewBox="0 0 14 14" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                     <defs/>
+                     <path id="mail"
+                           d="M7.38843 0.117554L13.6885 4.31763C13.8831 4.44775 14 4.66626 14 4.90002L14 12.6C14 13.3721 13.3721 14 12.6001 14L1.3999 14C0.62793 14 0 13.3721 0 12.6L0 4.90002C0 4.66626 0.116943 4.44775 0.312256 4.31763L6.6123 0.117554C6.84741 -0.0391846 7.15332 -0.0391846 7.38843 0.117554ZM7 1.54138L12.0378 4.90002L7 8.25854L1.96216 4.90002L7 1.54138ZM1.3999 6.20825L1.3999 12.6L12.5979 12.6L12.6001 6.20825L7.38843 9.68237C7.271 9.76074 7.13501 9.80005 7 9.80005C6.86499 9.80005 6.729 9.76074 6.61157 9.68237L1.3999 6.20825Z"
+                           clip-rule="evenodd" fill="#6C757D" fill-opacity="1.000000" fill-rule="evenodd"/></svg>
+                    </span>
+                    <input type="text" value="" class="form-control rounded-end-1" id="email"
+                           placeholder="Электронная почта"
+                           aria-label="Электронная почта"
+                           aria-describedby="basic-addon1">
+                    <div class="invalid-feedback ms-5">
+                        Введите e-mail адрес
+                    </div>
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text p-2">
+                        <svg class="m-1" width="13.000000" height="16.000000" viewBox="0 0 13 16" fill="none"
+                             xmlns="http://www.w3.org/2000/svg"><defs/>
+	                    <path id="lock"
+                              d="M2.3999 4C2.3999 1.79443 4.19434 0 6.3999 0C8.60571 0 10.3999 1.79443 10.3999 4L10.3999 6.40002L11.2 6.40002C12.0825 6.40002 12.8 7.11755 12.8 8L12.8 14.4C12.8 15.2823 12.0825 16 11.2 16L1.6001 16C0.717529 16 0 15.2823 0 14.4L0 8C0 7.11755 0.717529 6.40002 1.6001 6.40002L2.3999 6.40002L2.3999 4ZM4 4L4 6.40002L8.80005 6.40002L8.80005 4C8.80005 2.67676 7.72314 1.59998 6.3999 1.59998C5.0769 1.59998 4 2.67676 4 4ZM11.2 8L11.2017 14.4L1.6001 14.4L1.6001 8L11.2 8Z"
+                              clip-rule="evenodd" fill="#6C757D" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                    </span>
+                    <input type="password" value="" class="form-control rounded-end-1" placeholder="Пароль" aria-label="Пароль" id="password"
+                           aria-describedby="basic-addon1">
+                    <div class="invalid-feedback ms-5">
+                        Введите пароль! Минимальная длина 8 символов.
+                    </div>
+                </div>
+                <div class="form-check my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="remember-me" required="">
+                    <label class="form-check-label" for="remember-me">
+                        Запомнить меня
+                    </label>
+                </div>
+                <div class="mb-2">
+                    <!--onclick="document.location='#/'"-->
+                    <button class="btn btn-primary w-100 mt-1" type="button" id="btn-login">Войти</button>
+                </div>
+            </div>
+            <div class="px-2 text-center text-sm-start">
+                Еще нет аккаунта? <a href="#/register" class="ms-0 ms-sm-2 text-nowrap">Пройдите регистрацию</a>
+            </div>
+        </div>
+    </div>
+</section>

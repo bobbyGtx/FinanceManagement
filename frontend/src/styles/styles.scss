@@ -1,0 +1,104 @@
+@import "404";
+@import "common-parts/layout";
+@import "main";
+@import "incandexp/incandexp";
+@import "categories/category-lists";
+
+
+:root {
+  --background: rgb(245, 245, 245);
+  --darkblue: rgb(5, 44, 101);//
+  --purple: rgb(41, 6, 97);
+  --header-1-color:var(--darkblue);//h1, текст шапки таблицы, ховер на + карточек,
+  --header-alt-color:var(--purple);
+  --table-exp-text:rgb(220, 53, 69);
+  --table-inc-text:rgb(25, 135, 84);
+  --inputs-text-color:rgb(108, 117, 125);
+  --inputs-bgnd-color:rgb(233, 236, 239);
+  --card-border-color: rgb(158, 161, 163);//Цвет рамок маленькой таблицы, карточек, и + на карточке
+  --table-sm-row-border:rgba(210, 210, 210);//Цвет гориз таблицы и разделителей чартов
+  --heil: rgb(196, 196, 196);//Рамки меню
+  --white: #fff;
+  --heilblue: rgb(13, 110, 253);
+  --dd-menu-text:var(--heilblue);
+  --black: #000;
+  --menu-text:var(--darkblue);
+  --menu-active-text:var(--white);
+}
+
+@font-face {
+  font-family: “roboto-reg”;
+  src: url("../static/fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: “roboto-reg”;
+  src: url("../static/fonts/Robotomedium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: “roboto-reg”;
+  src: url("../static/fonts/Robotobold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+body {
+  font-family: “roboto-reg”, sans-serif;
+  background-color: var(--background);
+}
+
+.h1 {
+  color: var(--header-1-color);
+}
+
+.h2 {
+  color: var(--header-alt-color);
+}
+
+.h3 {
+  color: var(--header-alt-color);
+  margin-bottom: 10px;
+}
+
+.input-group-text {
+  background-color: var(--inputs-bgnd-color);
+}
+
+.form-control, .form-select {
+  color: var(--inputs-text-color);
+}
+
+.main-form-group > div > input,
+.main-form-group > div > select{
+  max-width: 397px;
+}
+
+.btn {
+  padding: 11px 16px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.modal-dialog {
+  max-width: 530px;
+}
+
+.modal .modal-body {
+  color: var(--purple);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  #layout-content {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modal .modal-body {
+    font-size: 16px;
+  }
+}//модальные окна
+

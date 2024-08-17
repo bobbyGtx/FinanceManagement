@@ -1,0 +1,113 @@
+@import "../common-parts/interval-menu";
+
+.incandexp {
+  .add-buttons {
+    gap: 20px;
+  }
+
+  .main-interval-menu {
+    margin-bottom: 40px;
+
+    ul {
+      font-weight: 500;
+    }
+
+    .nav, .nav-item {
+      gap: 20px;
+    }
+  }
+
+  .table-data {
+    max-width: 1100px;
+    overflow-x: auto;
+  }
+
+  .table > .fw-bold > tr > th {
+    color: var(--header-1-color);
+  }
+
+  .table > .tbody > tr > .expense span {
+    color: var(--table-exp-text);
+  }
+
+  .table > .tbody > tr > .income span {
+    color: var(--table-inc-text);
+  }
+
+  .table > :not(caption) > * > * {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 909px) {
+  .incandexp {
+    .table {
+      font-size: 13px;
+    }
+
+    .table-data {
+      margin-left: -40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .incandexp {
+    .main-interval-menu {
+      margin-bottom: 30px;
+    }
+
+    .table-data {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .incandexp {
+    .table-data table,
+    .table-data thead,
+    .table-data tbody,
+    .table-data th,
+    .table-data td,
+    .table-data tr {
+      display: block;
+      font-size: 14px;
+    }
+
+    .table-data tr {
+      border: 1px solid var(--card-border-color);
+    }
+
+    .table-data thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    .table-data td {
+      border: none;
+      border-bottom: 1px solid var(--table-sm-row-border);
+      position: relative;
+      padding-left: 40%;
+      white-space: normal;
+      text-align: left;
+    }
+
+    .table-data td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 40%;
+      padding-right: 10px;
+      color: var(--header-1-color);
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .table-data td:before {
+      content: attr(data-title);
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<div class="incandexp-form">
+    <div class="h1 mb-4 pb-0 pb-sm-3 px-3 px-sm-0 text-center text-sm-start">
+        Создание дохода/расхода
+    </div>
+    <div class="main-form-group">
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <select class="form-select rounded-1 px-3 py-2" id="type-field" aria-label="Выберите расход или доход">
+                <option selected>Тип...</option>
+                <option value="1">Доход</option>
+                <option value="2">Расход</option>
+            </select>
+            <div class="invalid-feedback">
+                Поле не может быть пустым
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <select class="form-select rounded-1 px-3 py-2" id="category-field" aria-label="Выберите категорию">
+                <option selected>Категория...</option>
+                <option value="1">Категория 1</option>
+                <option value="2">Категория 2</option>
+                <option value="2">Категория 3</option>
+                <option value="2">Категория n</option>
+            </select>
+            <div class="invalid-feedback">
+                Нужно выбрать категорию
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <input type="text" class="form-control rounded-1 px-3 py-2 lh-1" id="price-field" min="1" placeholder="Сумма в $..."
+                   aria-label="Сумма в $..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Поле не может быть пустым
+            </div>
+        </div>
+        <div class="input-group mb-2 justify-content-sm-start justify-content-center">
+            <input type="date" class="form-control rounded-1 px-3 py-2 lh-1" id="date-field" placeholder="Дата..."
+                   aria-label="Дата..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Поле не может быть пустым
+            </div>
+        </div>
+        <div class="input-group mb-1 justify-content-sm-start justify-content-center">
+            <input type="text" class="form-control rounded-1 px-3 py-2 lh-1" id="comment-field" placeholder="Комментарий..."
+                   aria-label="Комментарий..."
+                   aria-describedby="basic-addon1">
+            <div class="invalid-feedback">
+                Поле не может быть пустым
+            </div>
+        </div>
+        <div class="pt-3 text-sm-start text-center">
+            <button type="button" onclick="document.location='#/incandexp'" class="btn btn-success me-2">
+                Создать
+            </button>
+            <button type="button" onclick="document.location='#/incandexp'" class="btn btn-danger">
+                Отмена
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalCenter">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <p class="text-center fs-sm-3 mx-3 mt-3">
+                        Вы действительно хотите удалить категорию? Связанные доходы будут удалены навсегда.
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center mb-3">
+                        <button type="button" class="btn btn-success me-1">Да удалить</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Не удалять</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

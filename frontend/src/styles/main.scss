@@ -1,0 +1,134 @@
+@import "common-parts/interval-menu";
+.main {
+  padding-bottom: 173px;
+
+  .main-interval-menu {
+    margin-bottom: 140px;
+    ul{
+      font-weight: 500;
+    }
+    .nav, .nav-item {
+      gap: 20px;
+    }
+  }
+
+  .charts-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .chart-element {
+    width: 450px;
+  }
+
+  .horizontal-divider {
+    display: none;
+  }
+
+  .horizontal-divider div {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid var(--table-sm-row-border);
+  }
+
+  .vertical-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 169px;
+  }
+
+  .vertical-divider div {
+    border: none;
+    height: 88%;
+    border-left: 1px solid var(--table-sm-row-border);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .main {
+    .chart-element {
+      width: unset;
+      max-width: 450px;
+    }
+
+    .vertical-divider {
+      width: 61px;
+    }
+  }
+}
+
+@media screen and (max-width: 1263px) {
+  .main {
+    .chart-element {
+      max-width: 350px;
+    }
+
+    .vertical-divider {
+      width: 61px;
+    }
+  }
+}
+
+@media screen and (max-width: 1089px) {
+  .main {
+    .charts-container {
+      flex-direction: column;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .chart-element {
+      width: 70%;
+      max-width: unset;
+    }
+
+    .vertical-divider {
+      display: none;
+    }
+
+    .horizontal-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 81px;
+      width: 88%;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    padding-bottom: 60px;
+
+    .main-interval-menu {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    .chart-element {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    .chart-element {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    .chart-element {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.main-interval-menu {
+  .nav-item {
+    a {
+      width: 100px;
+      padding: 9px 12px;
+      border: 1px solid rgb(108, 117, 125);
+      color: rgb(108, 117, 125);
+      &:hover {
+        color: rgb(71, 75, 79);
+        border: 1px solid rgb(71, 75, 79);
+        box-shadow: 0 0 3px rgb(108, 117, 125);
+      }
+    }
+
+    .active {
+      background-color: rgb(108, 117, 125);
+      color: rgb(255, 255, 255);
+      &:hover {
+        color: rgb(213, 213, 213);
+        border: 1px solid rgb(71, 75, 79);
+        box-shadow: 0 0 3px rgb(108, 117, 125);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-interval-menu {
+    margin-bottom: 50px;
+  }
+}

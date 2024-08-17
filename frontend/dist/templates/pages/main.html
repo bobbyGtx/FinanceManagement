@@ -1,0 +1,64 @@
+<div class="main">
+<div class="h1 mb-5 pb-0 pb-sm-2 text-center text-sm-start">
+    Главная
+</div>
+<div id="main-interval-menu" class="main-interval-menu pt-1">
+    <ul class="nav nav-pills d-flex flex-wrap justify-content-center justify-content-md-start">
+        <li class="nav-item">
+            <a href="javascript:void(0)" id="today-interval" class="nav-link active lh-1 text-center"
+               aria-current="page">
+                Сегодня
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:void(0)" id="week-interval" class="nav-link lh-1 text-center" aria-current="page">
+                Неделя
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:void(0)" id="month-interval" class="nav-link lh-1 text-center" aria-current="page">
+                Месяц
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:void(0)" id="year-interval" class="nav-link lh-1 text-center" aria-current="page">
+                Год
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:void(0)" id="full-interval" class="nav-link lh-1 text-center" aria-current="page">
+                Все
+            </a>
+        </li>
+        <li class="nav-item d-flex flex-nowrap align-items-center">
+            <a href="javascript:void(0)" id="user-interval" class="nav-link lh-1 text-center" aria-current="page">
+                Интервал
+            </a>
+            <span>с</span>
+            <span><a href="javascript:void(0)" id="user-start-date"
+                     class="border-0 shadow-none link-offset-2 p-0">Дата</a></span>
+            <span>по</span>
+            <span><a href="javascript:void(0)" id="user-end-date"
+                     class="border-0 shadow-none link-offset-2 p-0">Дата</a></span>
+        </li>
+    </ul>
+</div>
+<div class="charts-container">
+    <div class="chart-element">
+        <p class="h2 text-center mb-2 pb-1">Доходы</p>
+        <canvas id="inc-chart"></canvas>
+    </div>
+    <div class="vertical-divider">
+        <div>
+        </div>
+    </div>
+    <div class="horizontal-divider">
+        <div>
+        </div>
+    </div>
+    <div class="chart-element">
+        <p class="h2 text-center mb-2 pb-1">Расходы</p>
+        <canvas id="exp-chart"></canvas>
+    </div>
+</div>
+</div>
